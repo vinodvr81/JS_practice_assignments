@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edureka! Quiz</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    <link href="assign_project.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jqueryui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+    <script src="assign_project.js"></script>
+</head>
+
+<body>
+    <h1>Edureka! Quiz</h1>
+    <div id="percentage"></div>
+    <br>
+    <form id="quiz" name="quiz" onsubmit="return check();">
+        <p id="ques1"> What is 44+55?</p>
+        <label for="1">1:<input type="radio" name="question1" value="11"></label><span id="11">11</span>
+        <label for="2">2:<input type="radio" name="question1" value="55"></label><span id="55">55</span></br>
+        <label for="3">3:<input type="radio" name="question1" value="88"></label><span id="88">88</span>
+        <label for="4">4:<input type="radio" name="question1" value="99"></label><span id="a1">99</span>
+        <p id="ques2">Study of the structure of body is called______</p>
+        <label for="1a">1:<input type="radio" name="question2" value="Anatomy"></label><span id="a2">Anatomy</span>
+        <label for="2a">2:<input type="radio" name="question2" value="Biology"></label><span id="Biology">Biology</span></br>
+        <label for="3a">3:<input type="radio" name="question2" value="Psychology"></label><span id="Psychology">Psychology</span>
+        <label for="4a">4:<input type="radio" name="question2" value="Botany"></label><span id="Botany">Botany</span>
+        <p id="ques3">The capital of India is______</p>
+        <label for="1b">1:<input type="radio" name="question3" value="Mumbai"></label><span id="Mumbai">Mumbai</span>
+        <label for="2b">2:<input type="radio" name="question3" value="Delhi"></label><span id="a3">Delhi</span></br>
+        <label for="3b">3:<input type="radio" name="question3" value="Kolkata"></label><span id="Kolkata">Kolkata</span>
+        <label for="4b">4:<input type="radio" name="question3" value="Bangalore"></label><span id="Bangalore">Bangalore</span></br>
+        <input id="button" type="submit" value="I'm finished!" >
+    </form>
+    <div id="after_submit">
+        <p id="number_correct"></p>
+        <p id="message"></p>
+        <img id="picture"  alt="picture" width="400px">
+    </div>
+   
+</html>
+</body>
